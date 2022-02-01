@@ -1,0 +1,23 @@
+// Colors
+
+// ### Primary
+
+$DarkViolet: hsl(256, 26%, 20%);
+$GrayishBlue: hsl(216, 30%, 68%);
+
+
+$DarkVioletFilter: invert(14%) sepia(40%) saturate(1114%) hue-rotate(215deg) brightness(30%) contrast(95%);
+// ### Neutral
+
+$VeryDarkViolet: hsl(270, 9%, 17%);
+$DarkGrayishViolet: hsl(273, 4%, 51%);
+$VeryLightGray: hsl(0, 0%, 98%);
+
+
+// Breakpoint
+$breakpoint-small: 428px;
+$breakpoint-medium: 1098px;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');

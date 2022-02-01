@@ -1,0 +1,9 @@
+.container{
+    padding-left:10.3125rem !important;
+    padding-right:10.3125rem !important;
+
+    @media (max-width: $breakpoint-medium) {
+        padding-left: 1.2rem !important;
+        padding-right: 1.2rem !important;
+    }
+}
