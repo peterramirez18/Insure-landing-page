@@ -76,7 +76,14 @@ body {
   }
 }
 
-.header_nav li {
+.header_nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.15rem;
+}
+
+.header_nav ul li {
   list-style: none;
   text-transform: uppercase;
   font-size: 12.7px;
@@ -84,7 +91,7 @@ body {
   opacity: 0.5;
 }
 
-.header_nav li:hover {
+.header_nav ul li:hover {
   opacity: 1;
   cursor: pointer;
 }
@@ -159,7 +166,7 @@ body {
   }
 }
 
-.header_nav.active li {
+.header_nav.active ul li {
   color: #fafafa;
   font-size: 1.5rem;
   font-weight: 300;
@@ -505,25 +512,24 @@ body {
   }
 }
 
-.footer_grid div h3,
-.footer_grid div h4 {
+.footer_grid div p {
   font-family: 'Karla', sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.footer_grid div h3 {
+.footer_grid div p:first-child {
   line-height: 2.8rem;
   margin-bottom: 1rem;
   color: #837d87;
 }
 
-.footer_grid div h4 {
+.footer_grid div p:not(:first-child) {
   line-height: 1.95rem;
 }
 
-.footer_grid div h4:hover {
+.footer_grid div p:not(:first-child):hover {
   text-decoration: underline;
   cursor: pointer;
 }

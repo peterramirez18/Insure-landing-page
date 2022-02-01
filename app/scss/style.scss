@@ -45,16 +45,20 @@ body {
             display: none;
         }
 
-        li {
-            list-style: none;
-            text-transform: uppercase;
-            font-size: 12.7px;
-            font-weight: 700;
-            opacity: 0.5;
+        ul {
+            display: flex;
+            gap: 2.15rem;
+            li {
+                list-style: none;
+                text-transform: uppercase;
+                font-size: 12.7px;
+                font-weight: 700;
+                opacity: 0.5;
 
-            &:hover {
-                opacity: 1;
-                cursor: pointer;
+                &:hover {
+                    opacity: 1;
+                    cursor: pointer;
+                }
             }
         }
 
@@ -127,11 +131,13 @@ body {
         }
     }
 
-    li {
-        color: $VeryLightGray;
-        font-size: 1.5rem;
-        font-weight: 300;
-        opacity: 1;
+    ul{
+        li {
+            color: $VeryLightGray;
+            font-size: 1.5rem;
+            font-weight: 300;
+            opacity: 1;
+        }
     }
 
     .btn {
@@ -163,10 +169,10 @@ body {
     gap: 2.1875rem;
     padding: 6.625rem 0rem;
     position: relative;
-    
+
     background: linear-gradient(0deg, ($VeryLightGray) 30%, ($DarkViolet) 30%);
-    
-    &::before{
+
+    &::before {
         content: url(../../images/bg-pattern-intro-left-desktop.svg);
         position: absolute;
         left: 0;
@@ -178,15 +184,15 @@ body {
         }
     }
 
-    &::after{
+    &::after {
         content: url(../../images/bg-pattern-intro-right-desktop.svg);
         position: absolute;
-        right:0;
+        right: 0;
         top: 0;
 
         @media (max-width: $breakpoint-medium) {
             content: url(../../images/bg-pattern-intro-right-mobile.svg);
-            right:0;
+            right: 0;
             bottom: 0;
             transform: translateY(10rem);
         }
@@ -269,7 +275,8 @@ body {
         align-items: center;
         text-align: center;
     }
-    .line{
+
+    .line {
         background-color: $VeryDarkViolet !important;
     }
 
@@ -306,7 +313,7 @@ body {
 .findout {
     background-color: $VeryLightGray;
     padding-bottom: 9.4375rem;
-    
+
 
     &_bg {
         background: $DarkViolet;
@@ -357,8 +364,8 @@ body {
     }
 }
 
-.footer{
-   
+.footer {
+
     padding: 4rem 0rem 0rem 0rem;
     background-image: url(../../images/bg-pattern-footer-desktop.svg);
     background-repeat: no-repeat;
@@ -375,16 +382,16 @@ body {
             gap: 2rem;
         }
 
-        &_redes{
+        &_redes {
             display: flex;
             gap: 1rem;
 
-           img{
-                &:hover{
+            img {
+                &:hover {
                     cursor: pointer;
                     filter: $DarkVioletFilter;
                 }
-           }
+            }
         }
     }
 
@@ -401,28 +408,29 @@ body {
 
         div {
 
-            h3,
-            h4 {
+            p{
                 font-family: 'Karla', sans-serif;
                 font-size: 1rem;
                 text-transform: uppercase;
                 font-weight: 600;
 
-            }
+                &:first-child{
+                    line-height: 2.8rem;
+                    margin-bottom: 1rem;
+                    color: $DarkGrayishViolet;
+                }
 
-            h3 {
-                line-height: 2.8rem;
-                margin-bottom: 1rem;
-                color: $DarkGrayishViolet;
-            }
-
-            h4 {
-                line-height: 1.95rem;
-                &:hover{
-                    text-decoration: underline;
-                    cursor: pointer;
+                &:not(:first-child) {
+                    line-height: 1.95rem;
+    
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
                 }
             }
+
+            
         }
     }
 }
@@ -445,13 +453,13 @@ body {
 }
 
 
-.attribution{
+.attribution {
     margin-top: 3rem;
     margin-bottom: 3rem;
     font-size: 11px;
     text-align: center;
 
-    a{
+    a {
         color: hsl(228, 45%, 44%);
     }
 }
